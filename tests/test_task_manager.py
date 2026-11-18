@@ -36,6 +36,19 @@ class TestTaskManager(unittest.TestCase):
             self.manager.add_task("   ")
         self.assertEqual(self.manager.list_tasks(), [])
 
+    def test_complete_task(self):
+        task = self.manager.add_task("Submit assignment")
+        self.assertTrue(self.manager.complete_task(task.id))
+        self.assertTrue(self.manager.list_tasks()[0].completed)
+
+    def test_complete_invalid_id(self):
+        self.manager.add_task("Submit assignment")
+        self.assertFalse(self.manager.complete_task(99))
+        with self.assertRaises(ValueError):
+            self.manager.complete_task(0)
+        with self.assertRaises(ValueError):
+            self.manager.complete_task(-3)
+
     def test_list_tasks_empty_at_start(self):
         self.assertEqual(self.manager.list_tasks(), [])
 
