@@ -1,0 +1,66 @@
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): Enter task title: Task added: Revise DevOps notes
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): Enter task title: Task added: Prepare lab report
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): 1. [Pending] Revise DevOps notes
+2. [Pending] Prepare lab report
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): Enter task ID to complete: Task 1 marked as completed.
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): 1. [Done] Revise DevOps notes
+2. [Pending] Prepare lab report
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): Enter task ID to delete: Task 2 deleted.
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): 1. [Done] Revise DevOps notes
+
+--- Student Task Manager ---
+1. Add Task
+2. Display Tasks
+3. Complete Task
+4. Delete Task
+5. Exit
+Enter your choice (1-5): Goodbye! Your tasks are saved.

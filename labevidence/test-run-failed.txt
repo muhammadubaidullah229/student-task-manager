@@ -1,0 +1,22 @@
+test_add_empty_title_rejected (test_task_manager.TestTaskManager.test_add_empty_title_rejected) ... ok
+test_add_task (test_task_manager.TestTaskManager.test_add_task) ... ok
+test_complete_invalid_id (test_task_manager.TestTaskManager.test_complete_invalid_id) ... ok
+test_complete_task (test_task_manager.TestTaskManager.test_complete_task) ... FAIL
+test_delete_invalid_id (test_task_manager.TestTaskManager.test_delete_invalid_id) ... ok
+test_delete_task (test_task_manager.TestTaskManager.test_delete_task) ... ok
+test_list_tasks_empty_at_start (test_task_manager.TestTaskManager.test_list_tasks_empty_at_start) ... ok
+test_save_and_load (test_task_manager.TestTaskManager.test_save_and_load) ... ok
+
+======================================================================
+FAIL: test_complete_task (test_task_manager.TestTaskManager.test_complete_task)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/tmp/stm-fail-demo/tests/test_task_manager.py", line 42, in test_complete_task
+    self.assertFalse(self.manager.list_tasks()[0].completed)  # TEMPORARY BREAK: expects not-completed after complete_task()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: True is not false
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.004s
+
+FAILED (failures=1)
