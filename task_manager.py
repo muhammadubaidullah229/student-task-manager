@@ -19,7 +19,11 @@ class Task:
 
 
 class TaskManager:
-    """Keeps the list of tasks and saves/loads them from a JSON file."""
+    """Keeps the list of tasks and saves/loads them from a JSON file.
+
+    Project status: In Progress — the task list, complete and delete
+    features are done; the release v1.0.0 is published.
+    """
 
     def __init__(self, storage_path="tasks.json"):
         self.storage_path = storage_path
