@@ -91,3 +91,5 @@ conflicted file first, in `labevidence/conflict-readme-before.txt`, as
 proof of the conflict. The lesson was simple: a conflict is not lost work,
 it is Git asking a human to decide, and the decision should match the
 real state of the project.
+
+Review note: deleting a task removes only the task with that ID; the other tasks stay untouched.
