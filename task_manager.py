@@ -36,6 +36,19 @@ class TaskManager:
         self.save()
         return task
 
+    def complete_task(self, task_id):
+        """Mark a task as completed. Returns True if done, False if the
+        id does not exist. Raises ValueError for an invalid id."""
+        if not isinstance(task_id, int) or isinstance(task_id, bool) \
+                or task_id <= 0:
+            raise ValueError("Task ID must be a positive number.")
+        for task in self.tasks:
+            if task.id == task_id:
+                task.completed = True
+                self.save()
+                return True
+        return False
+
     def list_tasks(self):
         """Return all tasks in the order they were added."""
         return list(self.tasks)
