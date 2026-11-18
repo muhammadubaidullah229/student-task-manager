@@ -36,7 +36,7 @@ Task added: Revise DevOps notes
 ```
 
 An empty title is not accepted — the app tells you the title cannot
-be empty and asks again.
+be empty and asks again. A title with only spaces is rejected the same way.
 
 ### 2. Display Tasks
 
