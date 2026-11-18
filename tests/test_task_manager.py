@@ -49,6 +49,22 @@ class TestTaskManager(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.manager.complete_task(-3)
 
+    def test_delete_task(self):
+        task = self.manager.add_task("Old task")
+        self.manager.add_task("Keep this task")
+        self.assertTrue(self.manager.delete_task(task.id))
+        titles = [t.title for t in self.manager.list_tasks()]
+        self.assertEqual(titles, ["Keep this task"])
+
+    def test_delete_invalid_id(self):
+        self.manager.add_task("Keep this task")
+        self.assertFalse(self.manager.delete_task(99))
+        with self.assertRaises(ValueError):
+            self.manager.delete_task(0)
+        with self.assertRaises(ValueError):
+            self.manager.delete_task(-1)
+        self.assertEqual(len(self.manager.list_tasks()), 1)
+
     def test_list_tasks_empty_at_start(self):
         self.assertEqual(self.manager.list_tasks(), [])
 
