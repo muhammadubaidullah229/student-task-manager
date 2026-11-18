@@ -8,7 +8,7 @@ so they are still there the next time you run the app.
 
 - Add a task with a title (empty titles are rejected)
 - List all tasks with their status (Pending / Done)
-- Mark a task as completed by its ID
+- Mark a task as completed by its ID (completed tasks stay in the list marked [Done])
 - Delete a task by its ID
 - Tasks are saved automatically to `tasks.json`
 - Invalid menu choices and IDs are handled without crashing
