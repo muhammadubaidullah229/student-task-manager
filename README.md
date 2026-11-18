@@ -25,3 +25,4 @@ python main.py
 Muhammad Ubaidullah — SP23-BSE-131
 
 Project status: In Progress
+Merge conflict resolved: kept In Progress; Completed was premature.
