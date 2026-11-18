@@ -23,3 +23,5 @@ python main.py
 ## Author
 
 Muhammad Ubaidullah — SP23-BSE-131
+
+Project status: Planning
