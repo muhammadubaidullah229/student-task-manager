@@ -29,6 +29,13 @@ class TestTaskManager(unittest.TestCase):
         self.assertFalse(task.completed)
         self.assertEqual(len(self.manager.list_tasks()), 1)
 
+    def test_add_empty_title_rejected(self):
+        with self.assertRaises(ValueError):
+            self.manager.add_task("")
+        with self.assertRaises(ValueError):
+            self.manager.add_task("   ")
+        self.assertEqual(self.manager.list_tasks(), [])
+
     def test_list_tasks_empty_at_start(self):
         self.assertEqual(self.manager.list_tasks(), [])
 

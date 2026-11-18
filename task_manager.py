@@ -27,7 +27,9 @@ class TaskManager:
         self.load()
 
     def add_task(self, title):
-        """Add a task and return it."""
+        """Add a task and return it. Empty or blank titles are rejected."""
+        if not title or not title.strip():
+            raise ValueError("Task title cannot be empty.")
         task_id = max((t.id for t in self.tasks), default=0) + 1
         task = Task(id=task_id, title=title.strip())
         self.tasks.append(task)
