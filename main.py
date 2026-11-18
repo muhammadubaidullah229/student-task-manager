@@ -11,6 +11,7 @@ def show_menu():
     print("1. Add Task")
     print("2. Display Tasks")
     print("3. Complete Task")
+    print("4. Delete Task")
     print("5. Exit")
 
 
@@ -28,7 +29,7 @@ def main():
     manager = TaskManager()
     while True:
         show_menu()
-        choice = input("Enter your choice (1, 2, 3 or 5): ").strip()
+        choice = input("Enter your choice (1-5): ").strip()
         if choice == "1":
             title = input("Enter task title: ")
             try:
@@ -47,11 +48,20 @@ def main():
                     print(f"No task found with ID {task_id}.")
             except ValueError:
                 print("Please enter a valid task ID (a positive number).")
+        elif choice == "4":
+            try:
+                task_id = int(input("Enter task ID to delete: "))
+                if manager.delete_task(task_id):
+                    print(f"Task {task_id} deleted.")
+                else:
+                    print(f"No task found with ID {task_id}.")
+            except ValueError:
+                print("Please enter a valid task ID (a positive number).")
         elif choice == "5":
             print("Goodbye! Your tasks are saved.")
             break
         else:
-            print("Invalid choice. Please enter 1, 2, 3 or 5.")
+            print("Invalid choice. Please enter a number from 1 to 5.")
 
 
 if __name__ == "__main__":
