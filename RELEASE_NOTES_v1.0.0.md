@@ -28,4 +28,4 @@ library only, no packages to install).
 python main.py
 ```
 
-See `docs/userguide.md` for the full user guide.
+See `docs/user-guide.md` for the full user guide.

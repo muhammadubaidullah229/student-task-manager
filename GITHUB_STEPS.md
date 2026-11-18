@@ -41,7 +41,7 @@ conflict/status-in-progress + conflict/status-completed) and tag `v1.0.0`.
 
 1. Go to https://github.com and sign in.
 2. Click **+** (top right) → **New repository**.
-3. Repository name: `studenttaskmanager`
+3. Repository name: `student-task-manager`
 4. Description (optional): `Simple console Student Task Manager — CSC418 Lab Assignment 4`
 5. Choose **Public**.
 6. **Do NOT tick** "Add a README file". Do NOT add a .gitignore or a
@@ -54,7 +54,7 @@ conflict/status-in-progress + conflict/status-completed) and tag `v1.0.0`.
 In your terminal, in the project folder, run these commands exactly:
 
 ```bash
-git remote add origin https://github.com/muhammadubaidullah229/studenttaskmanager.git
+git remote add origin https://github.com/muhammadubaidullah229/student-task-manager.git
 git push -u origin main
 git push --all
 git push --tags
@@ -71,7 +71,7 @@ What each line does:
 - `git push --tags` — uploads the release tag `v1.0.0`.
 
 Check on GitHub: open
-`https://github.com/muhammadubaidullah229/studenttaskmanager` — you
+`https://github.com/muhammadubaidullah229/student-task-manager` — you
 should see the README, and the branch dropdown should list all
 6 branches. Click **Actions** — the "Tests" workflow should run and
 go green (it runs the 8 unit tests).
@@ -162,7 +162,7 @@ A short user guide so a new user can run the app without asking
 the developer.
 
 ## Done when
-- `docs/userguide.md` explains: install, run `python main.py`,
+- `docs/user-guide.md` explains: install, run `python main.py`,
   each menu option (1-5) with an example, where tasks are stored
   (`tasks.json`), and troubleshooting for common errors
 - README links to the user guide

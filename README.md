@@ -55,7 +55,7 @@ Enter your choice (1-5): 5
 Goodbye! Your tasks are saved.
 ```
 
-See `docs/userguide.md` for the full user guide.
+See `docs/user-guide.md` for the full user guide.
 
 ## Running the tests
 
@@ -69,7 +69,7 @@ touch your real `tasks.json`.
 ## Project structure
 
 ```text
-studenttaskmanager/
+student-task-manager/
 ├── main.py                  # Console menu (add / display / complete / delete / exit)
 ├── task_manager.py          # Task dataclass + TaskManager (add, list, complete, delete, save/load)
 ├── tests/
@@ -77,7 +77,7 @@ studenttaskmanager/
 ├── .github/workflows/
 │   └── tests.yml            # GitHub Actions: run tests on push and PR to main
 ├── docs/
-│   └── userguide.md         # User guide
+│   └── user-guide.md       # User guide
 ├── LABREPORT.md             # Answers to the Part G questions
 ├── GITHUB_STEPS.md          # Steps to push this repo to GitHub (helper, not graded)
 ├── LICENSE                  # MIT License
