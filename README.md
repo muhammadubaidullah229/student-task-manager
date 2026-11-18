@@ -24,4 +24,4 @@ python main.py
 
 Muhammad Ubaidullah — SP23-BSE-131
 
-Project status: Planning
+Project status: In Progress
