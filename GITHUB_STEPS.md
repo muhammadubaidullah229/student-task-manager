@@ -10,6 +10,8 @@
 **Time needed:** about 20–30 minutes (push 2 min, Issues 10 min,
 PRs 5 min, Release 5 min).
 
+Note: pull requests should be opened on GitHub *before* merging, so each PR page exists before the merge.
+
 **Note about the git email:** this repo was built with the local git
 identity `Muhammad Ubaidullah <muhammadubaidullah229@users.noreply.github.com>`.
 That is GitHub's private "noreply" email for your username
